@@ -7,7 +7,7 @@ The bot uses big `Emgu.CV` lib to work with the web cam, let me know if you know
 ## Setup Instructions
 1. Obtain a telegram bot auth token.
    1. Create a telegram bot using [@BotFather](https://t.me/botfather).
-2. Compile the project.
+2. Download the latest release or compile the project locally.
 3. Configure your bot.
    1. Adjust `appsettings.json` file with auth token.
    2. Add your telegram user id to Security -> Allowed Users array.
