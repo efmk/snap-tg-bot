@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <PropertyGroup>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    </PropertyGroup>
+
+    <!--Analyzers-->
+    <ItemGroup>
+        <!-- Async usages analyzers -->
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers"/>
+    </ItemGroup>
+
+</Project>

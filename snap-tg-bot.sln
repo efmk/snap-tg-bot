@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln items", "sln items", "{88C78184-4CC3-42AF-8E17-817752F25697}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		global.json = global.json
+		nuget.config = nuget.config
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".analyzer", ".analyzer", "{092AF689-FCF6-4D97-B26F-1F643FE2C3C3}"
+	ProjectSection(SolutionItems) = preProject
+		.analyzer\CodeAnalysis.props = .analyzer\CodeAnalysis.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E188D31-EDA5-4EB4-8400-A27699FDAD32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{E8FCB229-5B24-4047-8551-E2CDA358D30E}"
+	ProjectSection(SolutionItems) = preProject
+		src\apps\Directory.Build.props = src\apps\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapTgBot", "src\apps\SnapTgBot\SnapTgBot.csproj", "{A76BC3EE-35FA-459F-97EB-637EF2468ED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092AF689-FCF6-4D97-B26F-1F643FE2C3C3} = {88C78184-4CC3-42AF-8E17-817752F25697}
+		{E8FCB229-5B24-4047-8551-E2CDA358D30E} = {0E188D31-EDA5-4EB4-8400-A27699FDAD32}
+		{A76BC3EE-35FA-459F-97EB-637EF2468ED8} = {E8FCB229-5B24-4047-8551-E2CDA358D30E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76BC3EE-35FA-459F-97EB-637EF2468ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76BC3EE-35FA-459F-97EB-637EF2468ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76BC3EE-35FA-459F-97EB-637EF2468ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76BC3EE-35FA-459F-97EB-637EF2468ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

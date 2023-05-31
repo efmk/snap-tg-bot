@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <EnableCodeAnalysis>true</EnableCodeAnalysis>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+    
+    <Import Condition="$(EnableCodeAnalysis)" Project="$(MSBuildThisFileDirectory).analyzer\CodeAnalysis.props"/>
+
+    <PropertyGroup>
+        <OutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)</OutputPath>
+        <LangVersion>11.0</LangVersion>
+        <Features>strict</Features>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageProjectUrl>https://efim.dev</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/efmk/snap-tg-bot</RepositoryUrl>
+        <Authors>Efim Konstantinov</Authors>
+        <Copyright>Efim Konstantinov (c) 2023</Copyright>
+        <Version>0.0.1</Version>
+    </PropertyGroup>
+</Project>

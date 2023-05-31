@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputPath>$(OutputPath)\SnapTgBot</OutputPath>
+        <OutputType>Exe</OutputType>
+        <UserSecretsId>3285ade5-33a9-4569-8349-dc964f127d14</UserSecretsId>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="appsettings.json"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac.Extensions.DependencyInjection"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets"/>
+        <PackageReference Include="Telegram.Bot"/>
+        <PackageReference Include="Jetbrains.Annotations"/>
+        <PackageReference Include="Emgu.CV"/>
+        <PackageReference Include="Emgu.CV.runtime.ubuntu-x64" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'"/>
+        <PackageReference Include="Emgu.CV.runtime.windows" Condition="'$(OS)' == 'Windows_NT'"/>
+        <PackageReference Include="System.Drawing.Common"/>
+    </ItemGroup>
+
+</Project>

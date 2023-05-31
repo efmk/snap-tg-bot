@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <!--Workaround for merging of directory props-->
+    <!--See https://github.com/Microsoft/msbuild/issues/2456 -->
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))"/>
+
+    <PropertyGroup>
+        <OutputPath>$(OutputPath)\apps</OutputPath>
+    </PropertyGroup>
+</Project>
